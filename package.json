@@ -68,7 +68,8 @@
         "travis-deploy-once": "travis-deploy-once",
         "snyk-protect": "snyk protect",
         "perf": "bundlesize",
-        "prepare": "npm run snyk-protect"
+        "prepare": "npm run snyk-protect",
+        "reveal-deploy": "./lib/reveal-deploy.sh"
     },
     "jest": {
         "preset": "jest-puppeteer"

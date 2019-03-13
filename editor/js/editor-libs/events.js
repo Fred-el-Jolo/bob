@@ -96,7 +96,7 @@ function addPostMessageListener() {
             var expectedOrigin =
                 window.ieConfig && window.ieConfig.origin
                     ? window.ieConfig.origin
-                    : 'https://developer.mozilla.org';
+                    : 'http://localhost:8000';
             var isExpectedOrigin = event.origin === expectedOrigin;
 
             /* there may be other post messages so, ensure that the origin is as

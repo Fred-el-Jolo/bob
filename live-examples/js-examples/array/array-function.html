@@ -1,0 +1,14 @@
+<pre>
+<code id="static-js">const f = function (x,y) {
+console.log(`x=${x} y=${y}`);
+}
+
+f(4,5);
+f(10,18);
+
+setTimeout(f.bind(null, 'hé', 'héé'), 5000);
+
+console.log('Rasta faright');
+// expected output: Array ["a", "b", "c", "d", "e", "f"]
+</code>
+</pre>

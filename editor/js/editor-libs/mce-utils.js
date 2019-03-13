@@ -70,7 +70,7 @@ module.exports = {
             perf,
             window.ieConfig && window.ieConfig.origin
                 ? window.ieConfig.origin
-                : 'https://developer.mozilla.org'
+                : 'http://localhost:8000'
         );
     },
     /**

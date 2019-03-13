@@ -9,7 +9,7 @@
  * https://stackoverflow.com/a/979995/10612
  */
 function setupConfig() {
-    var origin = 'https://developer.mozilla.org';
+    var origin = 'http://localhost:8000';
     if (window.URL) {
         var url = new URL(window.location.href);
         if (url.searchParams) {
