@@ -1,0 +1,28 @@
+{
+    "pages": {
+        "simpleGenerator1": {
+            "exampleCode": "live-examples/js-examples/generators/simple-generator-1.html",
+            "fileName": "simple-generator-1.html",
+            "title": "JavaScript Runner: Simple generator #1",
+            "type": "js"
+        },
+        "simpleGenerator2": {
+            "exampleCode": "live-examples/js-examples/generators/simple-generator-2.html",
+            "fileName": "simple-generator-2.html",
+            "title": "JavaScript Runner: Simple generator #2",
+            "type": "js"
+        },
+        "advancedGenerators1": {
+            "exampleCode": "live-examples/js-examples/generators/advanced-generators-1.html",
+            "fileName": "advanced-generators-1.html",
+            "title": "JavaScript Runner: Advanced generators",
+            "type": "js"
+        },
+        "advancedGenerators2": {
+            "exampleCode": "live-examples/js-examples/generators/advanced-generators-2.html",
+            "fileName": "advanced-generators-2.html",
+            "title": "JavaScript Runner: Advanced generators",
+            "type": "js"
+        }
+    }
+}

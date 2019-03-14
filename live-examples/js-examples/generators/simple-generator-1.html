@@ -1,0 +1,13 @@
+<pre>
+<code id="static-js">function *foo() {
+  let i = 0;
+  while(true) {
+    yield i++;
+  }
+}
+
+const it = foo();
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());</code>
+</pre>

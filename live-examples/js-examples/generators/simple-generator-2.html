@@ -1,0 +1,12 @@
+<pre>
+<code id="static-js">function *foo() {
+	var x = yield "Hello World";
+	yield x;
+}
+
+const it = foo();
+
+console.log(it.next());
+console.log(it.next('Hello JS Sophia'));
+console.log(it.next('Hello JS Sophia'));</code>
+</pre>

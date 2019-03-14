@@ -1,0 +1,19 @@
+<pre>
+<code id="static-js">function *foo(step) {
+  let i = 0;
+  while(true) {
+		yield i;
+		i = i + step;
+  }
+}
+
+const it1 = foo(1);
+const it2 = foo(2);
+
+console.log(`it1: ${it1.next().value}`);
+console.log(`it2: ${it2.next().value}`);
+console.log(`it1: ${it1.next().value}`);
+console.log(`it2: ${it2.next().value}`);
+console.log(`it1: ${it1.next().value}`);
+console.log(`it2: ${it2.next().value}`);</code>
+</pre>

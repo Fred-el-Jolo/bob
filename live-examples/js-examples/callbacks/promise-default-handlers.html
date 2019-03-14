@@ -1,0 +1,10 @@
+<pre>
+<code id="static-js">const p1 = Promise.resolve(42);
+p1.then()
+.then((data) => console.log(`Yep: ${data}`));
+
+const p2 = Promise.reject('Oops');
+p2.then()
+.then(null, (err) => console.log(`Nope: ${err}`));
+</code>
+</pre>

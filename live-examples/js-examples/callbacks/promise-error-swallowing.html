@@ -1,0 +1,22 @@
+<pre>
+<code id="static-js">try {  
+  const p1 = Promise.reject('Gloups');
+  p1.then((data) => console.log(`Yep: ${data}`))
+//  .catch((err) => console.log(`pcatch1: ${err}`));
+}
+catch(err) {
+  console.log('Error');
+}
+
+try {  
+  const p1 = Promise.resolve(42);
+  p1.then((data) => {
+    throw new Error('Ooops');
+  })
+  .then((data) => console.log(`Yep: ${data}`))
+//  .catch((err) => console.log(`pcatch2: ${err}`));
+}
+catch(err) {
+  console.log('Error');
+}</code>
+</pre>

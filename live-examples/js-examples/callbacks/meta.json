@@ -1,5 +1,11 @@
 {
     "pages": {
+        "playground": {
+            "exampleCode": "live-examples/js-examples/playground.html",
+            "fileName": "playground.html",
+            "title": "JavaScript Runner",
+            "type": "js"
+        },
         "callbackAPIExample": {
             "exampleCode": "live-examples/js-examples/callbacks/callback-api-example.html",
             "fileName": "callback-api-example.html",
@@ -51,6 +57,18 @@
         "promiseThenable": {
             "exampleCode": "live-examples/js-examples/callbacks/promise-thenable.html",
             "fileName": "promise-thenable.html",
+            "title": "JavaScript Runner: Promise & thenable",
+            "type": "js"
+        },
+        "promiseDefaultHandlers": {
+            "exampleCode": "live-examples/js-examples/callbacks/promise-default-handlers.html",
+            "fileName": "promise-default-handlers.html",
+            "title": "JavaScript Runner: Promise & thenable",
+            "type": "js"
+        },
+        "promiseErrorSwallowing": {
+            "exampleCode": "live-examples/js-examples/callbacks/promise-error-swallowing.html",
+            "fileName": "promise-error-swallowing.html",
             "title": "JavaScript Runner: Promise & thenable",
             "type": "js"
         }

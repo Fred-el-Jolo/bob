@@ -1,0 +1,21 @@
+<pre>
+<code id="static-js">let z = 0;
+function *foo() {
+  let i = 0;
+  while(true) {
+    yield i;
+    z++
+		i = i + z;
+  }
+}
+
+const it1 = foo(1);
+const it2 = foo(2);
+
+console.log(`it1: ${it1.next().value}`); // i=0; then z=1, i=1
+console.log(`it2: ${it2.next().value}`); // i=0; then z=2, i=2
+console.log(`it1: ${it1.next().value}`); // i=1; then z=3, i=4
+console.log(`it2: ${it2.next().value}`); // i=2; then z=4, i=6
+console.log(`it1: ${it1.next().value}`); // i=4; then z=5, i=9
+console.log(`it2: ${it2.next().value}`); // i=6; then z=6, i=12</code>
+</pre>
