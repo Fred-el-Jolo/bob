@@ -15,13 +15,13 @@
         "advancedGenerators1": {
             "exampleCode": "live-examples/js-examples/generators/advanced-generators-1.html",
             "fileName": "advanced-generators-1.html",
-            "title": "JavaScript Runner: Advanced generators",
+            "title": "JavaScript Runner: Advanced generators #1",
             "type": "js"
         },
         "advancedGenerators2": {
             "exampleCode": "live-examples/js-examples/generators/advanced-generators-2.html",
             "fileName": "advanced-generators-2.html",
-            "title": "JavaScript Runner: Advanced generators",
+            "title": "JavaScript Runner: Advanced generators #2",
             "type": "js"
         }
     }

@@ -9,7 +9,13 @@
         "callbackAPIExample": {
             "exampleCode": "live-examples/js-examples/callbacks/callback-api-example.html",
             "fileName": "callback-api-example.html",
-            "title": "JavaScript Runner: Callbacks execution order #1",
+            "title": "JavaScript Runner: Callbacks API example",
+            "type": "js"
+        },
+        "callbackAPIError": {
+            "exampleCode": "live-examples/js-examples/callbacks/callback-api-error.html",
+            "fileName": "callback-api-error.html",
+            "title": "JavaScript Runner: Callbacks API error",
             "type": "js"
         },
         "callbackExecOrder1": {
@@ -28,6 +34,12 @@
             "exampleCode": "live-examples/js-examples/callbacks/promise-api-example.html",
             "fileName": "promise-api-example.html",
             "title": "JavaScript Runner: Promise API example",
+            "type": "js"
+        },
+        "promiseAPIError": {
+            "exampleCode": "live-examples/js-examples/callbacks/promise-api-error.html",
+            "fileName": "promise-api-error.html",
+            "title": "JavaScript Runner: Promise API error",
             "type": "js"
         },
         "promiseImmutable1": {

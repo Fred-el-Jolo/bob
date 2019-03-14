@@ -1,0 +1,16 @@
+{
+    "pages": {
+        "asyncAwaitAPIExample": {
+            "exampleCode": "live-examples/js-examples/async/async-api-example.html",
+            "fileName": "async-api-example.html",
+            "title": "JavaScript Runner: Async/await API example",
+            "type": "js"
+        },
+        "asyncAwaitAPIError": {
+            "exampleCode": "live-examples/js-examples/async/async-api-error.html",
+            "fileName": "async-api-error.html",
+            "title": "JavaScript Runner: Async/await API error",
+            "type": "js"
+        }
+    }
+}

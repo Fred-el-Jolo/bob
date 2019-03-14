@@ -1,0 +1,30 @@
+<pre>
+<code id="static-js">const asyncExec = (callback, data) => {
+  setTimeout(() => callback(null, data), 0);
+};
+const asyncError = (callback, err) => {
+  setTimeout(() => callback(err, null), 0);
+};
+const api = {
+  getUser: (login, callback) => asyncExec(callback, `Hi ${login}, you are logged in.`),
+  getGeoLocation: (user, callback) => asyncExec(callback, `${user} You live in Nice.`),
+  getWeather: (location, callback) => asyncError(callback, `Oops something wrong with weather`),
+  notifyWeather: (data, callback) => asyncExec(callback, `Notified: ${data}`),
+}
+
+try {
+  api.getUser('fred', function(err, user) {
+    api.getGeoLocation(user, function(err, location) {
+        api.getWeather(location, function(err, weather) {
+            api.notifyWeather(weather, function(err, data) {
+              console.log(data);
+            });
+        });
+    });
+  });
+}
+  catch(err) {
+  console.log(`Try/catch: ${err}`);
+}
+</code>
+</pre>

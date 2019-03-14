@@ -1,0 +1,28 @@
+<pre>
+<code id="static-js">const asyncExec = (callback, data) => {
+  setTimeout(() => callback(null, data), 0);
+};
+const asyncError = (callback, err) => {
+setTimeout(() => callback(err, null), 0);
+};
+const api = {
+getUser: (login, callback) => asyncExec(callback, `Hi ${login}, you are logged in.`),
+getGeoLocation: (user, callback) => asyncExec(callback, `${user} You live in Nice.`),
+getWeather: (location, callback) => asyncError(callback, `Oops something wrong with weather`),
+notifyWeather: (data, callback) => asyncExec(callback, `Notified: ${data}`),
+}
+
+const promisify = (fn) => {return (data) => {return new Promise(function(resolve, reject) {setTimeout(() => {fn(data, function(err, data) {if (err) {reject(err)}resolve(data);})}, 0);});};};
+
+try {
+  promisify(api.getUser)('fred')
+    .then((data) => promisify(api.getGeoLocation)(data))
+    .then((data) => promisify(api.getWeather)(data))
+    .then((data) => promisify(api.notifyWeather)(data))
+    .then(console.log);
+}
+  catch(err) {
+  console.log(`Try/catch: ${err}`);
+}
+</code>
+</pre>

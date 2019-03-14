@@ -1,0 +1,27 @@
+<pre>
+<code id="static-js">const asyncExec = (callback, data) => {
+  setTimeout(() => callback(null, data), 0);
+};
+const api = {
+  getUser: (login, callback) => asyncExec(callback, `Hi ${login}, you are logged in.`),
+  getGeoLocation: (user, callback) => asyncExec(callback, `${user} You live in Nice.`),
+  getWeather: (location, callback) => asyncExec(callback, `${location} It is sunny.`),
+  notifyWeather: (data, callback) => asyncExec(callback, `Notified: ${data}`),
+}
+
+const promisify = (fn) => {return (data) => {return new Promise(function(resolve, reject) {setTimeout(() => {fn(data, function(err, data) {if (err) {reject(err)}resolve(data);})}, 0);});};};
+
+async function asyncFlow() {
+  const user = await promisify(api.getUser)('fred');
+  const location = await promisify(api.getGeoLocation)(user);
+  const weather = await promisify(api.getWeather)(location);
+  const notifiedData = await promisify(api.notifyWeather)(weather);
+  
+  console.log(user);
+  console.log(location);
+  console.log(weather);
+  console.log(notifiedData);
+}
+
+asyncFlow();</code>
+</pre>
