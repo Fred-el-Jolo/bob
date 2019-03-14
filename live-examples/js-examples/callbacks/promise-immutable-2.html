@@ -1,0 +1,15 @@
+<pre>
+<code id="static-js">const p = new Promise(function(resolve, reject) {
+  reject('Oups');
+  resolve(42);
+  resolve('Yep');
+  resolve(21);
+});
+
+p.then(function(data) {
+  console.log(`Fulfilled with ${data}`);
+}, function(err) {
+console.error(`Error: ${err}`);
+});
+</code>
+</pre>

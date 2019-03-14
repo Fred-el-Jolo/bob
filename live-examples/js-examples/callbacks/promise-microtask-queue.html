@@ -1,0 +1,11 @@
+<pre>
+<code id="static-js">console.log('A');
+
+setTimeout(() => console.log('D'), 0);
+
+Promise.resolve('C')
+.then( (data) => console.log(data) );
+
+console.log('B');
+</code>
+</pre>
