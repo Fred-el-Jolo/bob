@@ -9,7 +9,7 @@ module.exports = {
             eventDetails,
             window.ieConfig && window.ieConfig.origin
                 ? window.ieConfig.origin
-                : 'http://localhost:8000'
+                : 'https://aesthetecoding.io'
         );
     },
     /**

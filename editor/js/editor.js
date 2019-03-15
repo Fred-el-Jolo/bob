@@ -164,26 +164,4 @@
     document.addEventListener('WebComponentsReady', function() {
         render(templateUtils.getTemplateOutput());
     });
-
-    /* Ensure that performance is supported before
-       gathering the performance metric */
-    if (performance !== undefined) {
-        document.addEventListener('readystatechange', function(event) {
-            if (event.target.readyState === 'complete') {
-                /* loadEventEnd happens a split second after we
-                   reached complete. So we wait an additional
-                   100ms before getting it’ value */
-                setTimeout(function() {
-                    mceEvents.trackloadEventEnd(
-                        'Tabbed editor load time',
-                        performance.timing.loadEventEnd
-                    );
-                    // Posts mark to set on the Kuma side and used in measure
-                    mceUtils.postToKuma({
-                        markName: 'tabbed-ie-load-event-end'
-                    });
-                }, 100);
-            }
-        });
-    }
 })();

@@ -9,7 +9,7 @@ BOB_JS_EDITOR=./docs/js/editor-js.js
 
 BOB_PAGES=./docs/pages
 
-REVEAL_HOME=/home/jolo/dev/asynchronous-js
+REVEAL_HOME=/home/fguillaume/dev/asynchronous-js
 REVEAL_TARGET_CSS_DIR=/interactive-examples/css
 REVEAL_TARGET_JS_DIR=/interactive-examples/js
 REVEAL_TARGET_PAGES_DIR=/interactive-examples/pages

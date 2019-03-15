@@ -84,41 +84,6 @@ function addJSErrorListener() {
 }
 
 /**
- * Adds postMessage listener for communication from the parent page.
- * Currently only used by the CSS editor.
- */
-function addPostMessageListener() {
-    'use strict';
-    // listens for post message from Kuma
-    window.addEventListener(
-        'message',
-        function(event) {
-            var expectedOrigin =
-                window.ieConfig && window.ieConfig.origin
-                    ? window.ieConfig.origin
-                    : 'http://localhost:8000';
-            var isExpectedOrigin = event.origin === expectedOrigin;
-
-            /* there may be other post messages so, ensure that the origin is as
-            expected and, that `event.data` contains an `smallViewport` property */
-            if (
-                isExpectedOrigin &&
-                typeof event.data.smallViewport !== undefined
-            ) {
-                var editorWrapper = document.querySelector('.editor-wrapper');
-
-                if (event.data.smallViewport) {
-                    editorWrapper.classList.add('small-desktop-and-below');
-                } else {
-                    editorWrapper.classList.remove('small-desktop-and-below');
-                }
-            }
-        },
-        false
-    );
-}
-
-/**
  * Ensure that only the text portion of a copy event is stored in the
  * clipboard, by setting both 'text/plain', and 'text/html' to the same
  * plain text value.

@@ -1,0 +1,10 @@
+{
+    "pages": {
+        "playground": {
+            "exampleCode": "live-examples/js-examples/playground.html",
+            "fileName": "playground.html",
+            "title": "JavaScript Runner",
+            "type": "js"
+        }
+    }
+}

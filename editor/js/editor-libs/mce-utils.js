@@ -61,19 +61,6 @@ module.exports = {
         });
     },
     /**
-     * Posts a name to set as a mark to Kuma for
-     * processing and beaconing to GA
-     * @param {Object} perf - The performance object sent to Kuma
-     */
-    postToKuma: function(perf) {
-        window.parent.postMessage(
-            perf,
-            window.ieConfig && window.ieConfig.origin
-                ? window.ieConfig.origin
-                : 'http://localhost:8000'
-        );
-    },
-    /**
      * Interrupts the default click event on relative links inside
      * the shadow dom and scrolls to the targeted anchor
      * @param {Object} shadow - the shadow dom root

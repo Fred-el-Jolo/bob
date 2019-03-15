@@ -1,6 +1,9 @@
+header {
+    color: white;
+}
 .editor,
 .output {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .editor {
@@ -43,7 +46,7 @@
     padding: 0.5em;
     border: 2px solid #333;
     width: 100px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1;
     cursor: pointer;
 }
